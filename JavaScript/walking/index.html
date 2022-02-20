@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Walking!</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+            background-image: url('back.webp');
+            background-size: 100%;
+        }
+
+        img {
+            position: absolute;
+        }
+
+        div.speed {
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 3;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="speed">
+        <label for="speed">Speed</label>
+        <input type="text" name="speed" id="speed" value="10">
+        <p><b>Note: </b>use arrows for Walking.</p>
+    </div>
+    <img src="./walker-left.png" alt="walker" height="100" width="60">
+    <script src="./main.js"></script>
+</body>
+
+</html>
