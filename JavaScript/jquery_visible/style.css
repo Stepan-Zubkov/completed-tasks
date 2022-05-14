@@ -1,0 +1,6 @@
+div#change_element {
+    padding: 45px;
+    margin: 20px;
+    cursor: pointer;
+    border: 5px dotted black;
+}
