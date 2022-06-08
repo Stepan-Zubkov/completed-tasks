@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1.0'>
+    <link rel='stylesheet' href='style.css'>
+    <link rel='shortcut icon' href='icon.png' type='image/x-icon'>
+    <title>Stopwatch</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button {
+            width: 90px;
+            height: 30px;
+        }
+        
+        div#stopwatch {
+            display: inline-block;
+            min-width: 200px;
+            font-size: 40px;
+            padding: 20px 40px;
+            margin: 10px;
+            border: 2px solid #f0f0f0;
+            border-radius: 15px;
+        }
+
+        button#stop, button#reset,
+        button#split {
+            display: none;
+        }
+
+        div#splits div {
+            display: inline-block;
+            min-width: 200px;
+            font-weight: bold;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #f0f0f0;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="stopwatch">0.00.000</div>
+    <br>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <button id="reset">Reset</button>
+    <button id="split">Split</button>
+    <div id="splits"></div>
+    <script src="main.js"></script>
+</body>
+</html>

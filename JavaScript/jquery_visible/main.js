@@ -13,6 +13,6 @@ $('button#change_visible').click(function() {
         default:
             break;
     }
-    console.log($('input:checked').val());
+
 })
 })
